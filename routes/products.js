@@ -9,7 +9,7 @@ router.get('/', async (req, res, next)=>{
         const products = await Product.findAll();
         res.status(200).json(products);
     }
-    res.status(401).send('Token não autorizado')
+    res.status(401).send('Token não autorizado');
 
 });
 
